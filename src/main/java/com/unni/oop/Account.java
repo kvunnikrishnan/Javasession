@@ -7,6 +7,21 @@ public class Account {
 	private String customerName;
 	private String customerEmail;
 	
+	
+	public Account() {
+		
+		System.out.print("default construcutor");
+	}
+	
+	public Account(String accountNumber, double balance,String customerName, String customerEmail) {
+		
+		this.accountNumber=accountNumber;
+		this.balance=balance;
+		this.customerEmail=customerEmail;
+		this.customerName=customerName;
+		
+	}
+	
 	public void deposit(Double depoistAmount) {
 		this.balance +=depoistAmount;
 		System.out.println("Current balance is "+ balance);
