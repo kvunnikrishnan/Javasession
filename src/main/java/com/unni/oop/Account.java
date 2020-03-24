@@ -1,3 +1,8 @@
+/*
+ * @Author Unnikrishnan
+ * Date March 2020
+ */
+
 package com.unni.oop;
 
 public class Account {
@@ -10,7 +15,13 @@ public class Account {
 	
 	public Account() {
 		
-		System.out.print("default construcutor");
+		/*
+		 * Like below from one constructor another constructor can be called. 
+		 */
+		
+		this("107501510161",03030,"unnikrishnan","abc@gmail.com");
+		
+		System.out.println("default construcutor is called");
 	}
 	
 	public Account(String accountNumber, double balance,String customerName, String customerEmail) {
@@ -22,6 +33,12 @@ public class Account {
 		
 	}
 	
+	public Account(String customerName, String customerEmail) {
+		super();
+		this.customerName = customerName;
+		this.customerEmail = customerEmail;
+	}
+
 	public void deposit(Double depoistAmount) {
 		this.balance +=depoistAmount;
 		System.out.println("Current balance is "+ balance);
@@ -32,6 +49,7 @@ public class Account {
 			System.out.println("insufficent balance " + balance);
 		} else {
 			this.balance -=withdrawAmount;
+			System.out.println("current balance after withdrawing " + withdrawAmount + " is " + balance);
 		}
 	}
 	/**

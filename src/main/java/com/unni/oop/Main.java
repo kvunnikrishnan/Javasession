@@ -28,9 +28,8 @@ public class Main {
 		 * person.getFullName());
 		 */
 		
-		Account acc=new Account("107501510161",1000,"unnikrishnan","unni670@gmail.com");
-		acc.deposit(10.0);
-		acc.deposit(10.0);
+		//Account acc=new Account("107501510161",1000,"unnikrishnan","unni670@gmail.com");
+		Account acc=new Account();
 		acc.withDraw(11);
 		acc.deposit(10.0);
 		System.out.println("customer email id is"+ " "+ acc.getCustomerEmail());
