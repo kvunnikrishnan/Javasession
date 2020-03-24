@@ -7,7 +7,7 @@ public class LocalAndGlobalVariables {
 	String name="unni";
 	public static void main(String[] args) {
 		
-		int i=10;
+		//int i=10;
 	
 		LocalAndGlobalVariables obj =new LocalAndGlobalVariables();
         System.out.println(obj.name); //non static global variable will access through object inside main method
@@ -15,7 +15,7 @@ public class LocalAndGlobalVariables {
 	}
 	
 	public void sum() {
-		int i=15;//local variable
+		//int i=15;//local variable
 		System.out.println(name); // global variable will accessible here for non static method
 		 
 	}
