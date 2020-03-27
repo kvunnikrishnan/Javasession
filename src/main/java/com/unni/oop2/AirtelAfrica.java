@@ -7,7 +7,7 @@ public class AirtelAfrica implements TelecomSenegal,TelecomRwanda{ //multiple in
 	
 	public void sms() {
 		
-		System.out.println("* SMS Feature*");
+		System.out.println("* SMS Feature**");
 		
 	}
 	
