@@ -20,7 +20,7 @@ public class Functions {
 	 * 
 	 */
 	
-	//Return is 
+	//Return is void here
 
 	 public void test() {
 		 
