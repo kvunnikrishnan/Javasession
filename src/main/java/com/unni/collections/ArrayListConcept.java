@@ -8,8 +8,8 @@ public class ArrayListConcept {
 	public static void main(String Args[]) {
 
 		ArrayList ar = new ArrayList(); // generic is not declared here so the warning is showing.
-		ar.add(100);
-		ar.add("unni");
+		ar.add(100); //int values
+		ar.add("unni"); //string values :- yellow is showing arraylist is non-generic. 
 
 		System.out.println(ar.size());
 
